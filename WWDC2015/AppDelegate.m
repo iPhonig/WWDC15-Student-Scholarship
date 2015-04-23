@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#define kClientID @"00ea8510ed33ad0b758cb86e15328bcb"
+#define kClientSecret @"9fb7b264d5b48fd475492ebc799c4418"
+
 @interface AppDelegate ()
 
 @end
@@ -17,8 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //change status bar color to white
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

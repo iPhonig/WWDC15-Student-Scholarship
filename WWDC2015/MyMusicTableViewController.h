@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MyMusicTableViewController.h
 //  WWDC2015
 //
 //  Created by Ben Honig on 4/19/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MyMusicTableViewController : UITableViewController
 
+- (IBAction)showMenuAction:(id)sender;
 
 @end
-

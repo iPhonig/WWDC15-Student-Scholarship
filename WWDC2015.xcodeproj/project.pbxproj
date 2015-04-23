@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72E5371B79AD283DAF23A0BA /* libPods-WWDC2015.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C23FDD3B4D6B4C3E0210FAF /* libPods-WWDC2015.a */; };
 		FE7150461AE4504700583A8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7150451AE4504700583A8B /* main.m */; };
 		FE7150491AE4504700583A8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7150481AE4504700583A8B /* AppDelegate.m */; };
-		FE71504C1AE4504700583A8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE71504B1AE4504700583A8B /* ViewController.m */; };
 		FE71504F1AE4504700583A8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE71504D1AE4504700583A8B /* Main.storyboard */; };
 		FE7150511AE4504700583A8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7150501AE4504700583A8B /* Images.xcassets */; };
 		FE7150541AE4504700583A8B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7150521AE4504700583A8B /* LaunchScreen.xib */; };
 		FE7150601AE4504700583A8B /* WWDC2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE71505F1AE4504700583A8B /* WWDC2015Tests.m */; };
+		FE71506B1AE4516900583A8B /* MyMusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE71506A1AE4516900583A8B /* MyMusicTableViewController.m */; };
+		FE7150A51AE4527700583A8B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150A31AE4527700583A8B /* AddressBook.framework */; };
+		FE7150A61AE4527700583A8B /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150A41AE4527700583A8B /* AddressBookUI.framework */; };
+		FE7150A81AE4527D00583A8B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150A71AE4527D00583A8B /* Security.framework */; };
+		FE7150AC1AE4528500583A8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150A91AE4528500583A8B /* CoreGraphics.framework */; };
+		FE7150AD1AE4528500583A8B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150AA1AE4528500583A8B /* CoreLocation.framework */; };
+		FE7150AE1AE4528500583A8B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150AB1AE4528500583A8B /* CoreText.framework */; };
+		FE7150B01AE4528C00583A8B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150AF1AE4528C00583A8B /* QuartzCore.framework */; };
+		FE7150B81AE455CC00583A8B /* MyAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7150B71AE455CC00583A8B /* MyAppsViewController.swift */; };
+		FE7150BB1AE4A93D00583A8B /* AboutMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7150BA1AE4A93D00583A8B /* AboutMeTableViewController.m */; };
+		FE7150BE1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7150BD1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m */; };
+		FE7150C11AE4B98800583A8B /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7150C01AE4B98800583A8B /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +39,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C23FDD3B4D6B4C3E0210FAF /* libPods-WWDC2015.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WWDC2015.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E1BDA3530B7D8F85650300 /* Pods-WWDC2015.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDC2015.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWDC2015/Pods-WWDC2015.debug.xcconfig"; sourceTree = "<group>"; };
+		C63BDF3EA344050DFE57FD69 /* Pods-WWDC2015.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWDC2015.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWDC2015/Pods-WWDC2015.release.xcconfig"; sourceTree = "<group>"; };
 		FE7150401AE4504700583A8B /* WWDC2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7150441AE4504700583A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE7150451AE4504700583A8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE7150471AE4504700583A8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE7150481AE4504700583A8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FE71504A1AE4504700583A8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FE71504B1AE4504700583A8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FE71504E1AE4504700583A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE7150501AE4504700583A8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE7150531AE4504700583A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FE7150591AE4504700583A8B /* WWDC2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDC2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE71505E1AE4504700583A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE71505F1AE4504700583A8B /* WWDC2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDC2015Tests.m; sourceTree = "<group>"; };
+		FE7150691AE4516900583A8B /* MyMusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMusicTableViewController.h; sourceTree = "<group>"; };
+		FE71506A1AE4516900583A8B /* MyMusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMusicTableViewController.m; sourceTree = "<group>"; };
+		FE7150A31AE4527700583A8B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		FE7150A41AE4527700583A8B /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		FE7150A71AE4527D00583A8B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FE7150A91AE4528500583A8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE7150AA1AE4528500583A8B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FE7150AB1AE4528500583A8B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FE7150AF1AE4528C00583A8B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FE7150B61AE455CC00583A8B /* WWDC2015-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDC2015-Bridging-Header.h"; sourceTree = "<group>"; };
+		FE7150B71AE455CC00583A8B /* MyAppsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppsViewController.swift; sourceTree = "<group>"; };
+		FE7150B91AE4A93D00583A8B /* AboutMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeTableViewController.h; sourceTree = "<group>"; };
+		FE7150BA1AE4A93D00583A8B /* AboutMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeTableViewController.m; sourceTree = "<group>"; };
+		FE7150BC1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StoryboardIdentifiers.h"; sourceTree = "<group>"; };
+		FE7150BD1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StoryboardIdentifiers.m"; sourceTree = "<group>"; };
+		FE7150BF1AE4B98800583A8B /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		FE7150C01AE4B98800583A8B /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +77,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7150B01AE4528C00583A8B /* QuartzCore.framework in Frameworks */,
+				FE7150AC1AE4528500583A8B /* CoreGraphics.framework in Frameworks */,
+				FE7150AD1AE4528500583A8B /* CoreLocation.framework in Frameworks */,
+				FE7150AE1AE4528500583A8B /* CoreText.framework in Frameworks */,
+				FE7150A81AE4527D00583A8B /* Security.framework in Frameworks */,
+				FE7150A51AE4527700583A8B /* AddressBook.framework in Frameworks */,
+				FE7150A61AE4527700583A8B /* AddressBookUI.framework in Frameworks */,
+				72E5371B79AD283DAF23A0BA /* libPods-WWDC2015.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +98,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DA972C8C76C83498CC7FE60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE7150AF1AE4528C00583A8B /* QuartzCore.framework */,
+				FE7150A91AE4528500583A8B /* CoreGraphics.framework */,
+				FE7150AA1AE4528500583A8B /* CoreLocation.framework */,
+				FE7150AB1AE4528500583A8B /* CoreText.framework */,
+				FE7150A71AE4527D00583A8B /* Security.framework */,
+				FE7150A31AE4527700583A8B /* AddressBook.framework */,
+				FE7150A41AE4527700583A8B /* AddressBookUI.framework */,
+				4C23FDD3B4D6B4C3E0210FAF /* libPods-WWDC2015.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9800B3CF1040A3DB07E59A43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96E1BDA3530B7D8F85650300 /* Pods-WWDC2015.debug.xcconfig */,
+				C63BDF3EA344050DFE57FD69 /* Pods-WWDC2015.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FE7150371AE4504700583A8B = {
 			isa = PBXGroup;
 			children = (
 				FE7150421AE4504700583A8B /* WWDC2015 */,
 				FE71505C1AE4504700583A8B /* WWDC2015Tests */,
 				FE7150411AE4504700583A8B /* Products */,
+				9800B3CF1040A3DB07E59A43 /* Pods */,
+				1DA972C8C76C83498CC7FE60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,12 +147,20 @@
 			children = (
 				FE7150471AE4504700583A8B /* AppDelegate.h */,
 				FE7150481AE4504700583A8B /* AppDelegate.m */,
-				FE71504A1AE4504700583A8B /* ViewController.h */,
-				FE71504B1AE4504700583A8B /* ViewController.m */,
+				FE7150691AE4516900583A8B /* MyMusicTableViewController.h */,
+				FE71506A1AE4516900583A8B /* MyMusicTableViewController.m */,
+				FE7150B91AE4A93D00583A8B /* AboutMeTableViewController.h */,
+				FE7150BA1AE4A93D00583A8B /* AboutMeTableViewController.m */,
+				FE7150BC1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.h */,
+				FE7150BD1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m */,
+				FE7150BF1AE4B98800583A8B /* CustomTableViewCell.h */,
+				FE7150C01AE4B98800583A8B /* CustomTableViewCell.m */,
+				FE7150B71AE455CC00583A8B /* MyAppsViewController.swift */,
 				FE71504D1AE4504700583A8B /* Main.storyboard */,
 				FE7150501AE4504700583A8B /* Images.xcassets */,
 				FE7150521AE4504700583A8B /* LaunchScreen.xib */,
 				FE7150431AE4504700583A8B /* Supporting Files */,
+				FE7150B61AE455CC00583A8B /* WWDC2015-Bridging-Header.h */,
 			);
 			path = WWDC2015;
 			sourceTree = "<group>";
@@ -126,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE7150631AE4504700583A8B /* Build configuration list for PBXNativeTarget "WWDC2015" */;
 			buildPhases = (
+				6AC33D80BA987F6EA75396CC /* Check Pods Manifest.lock */,
 				FE71503C1AE4504700583A8B /* Sources */,
 				FE71503D1AE4504700583A8B /* Frameworks */,
 				FE71503E1AE4504700583A8B /* Resources */,
+				3A06710EECA75F1E21B22742 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,13 +288,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A06710EECA75F1E21B22742 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWDC2015/Pods-WWDC2015-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AC33D80BA987F6EA75396CC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE71503C1AE4504700583A8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE71504C1AE4504700583A8B /* ViewController.m in Sources */,
+				FE7150BE1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m in Sources */,
+				FE7150C11AE4B98800583A8B /* CustomTableViewCell.m in Sources */,
 				FE7150491AE4504700583A8B /* AppDelegate.m in Sources */,
+				FE71506B1AE4516900583A8B /* MyMusicTableViewController.m in Sources */,
+				FE7150B81AE455CC00583A8B /* MyAppsViewController.swift in Sources */,
+				FE7150BB1AE4A93D00583A8B /* AboutMeTableViewController.m in Sources */,
 				FE7150461AE4504700583A8B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,10 +410,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -336,30 +452,72 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
 		FE7150641AE4504700583A8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E1BDA3530B7D8F85650300 /* Pods-WWDC2015.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WWDC2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-WWDC2015-PopMenu\"",
+					"-l\"Pods-WWDC2015-XHRealTimeBlur\"",
+					"-l\"Pods-WWDC2015-pop\"",
+					"-l\"c++\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WWDC2015/WWDC2015-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FE7150651AE4504700583A8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63BDF3EA344050DFE57FD69 /* Pods-WWDC2015.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WWDC2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-WWDC2015-PopMenu\"",
+					"-l\"Pods-WWDC2015-XHRealTimeBlur\"",
+					"-l\"Pods-WWDC2015-pop\"",
+					"-l\"c++\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WWDC2015/WWDC2015-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -416,6 +574,7 @@
 				FE7150651AE4504700583A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE7150661AE4504700583A8B /* Build configuration list for PBXNativeTarget "WWDC2015Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +583,7 @@
 				FE7150681AE4504700583A8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

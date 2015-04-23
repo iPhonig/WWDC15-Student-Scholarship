@@ -1,0 +1,16 @@
+PODS:
+  - pop (1.0.7)
+  - PopMenu (2.1):
+    - pop
+    - XHRealTimeBlur
+  - XHRealTimeBlur (1.7)
+
+DEPENDENCIES:
+  - PopMenu
+
+SPEC CHECKSUMS:
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  PopMenu: 81d45a95a9c5d3939f3aa2f2c6786ae1594f54d0
+  XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
+
+COCOAPODS: 0.36.4
