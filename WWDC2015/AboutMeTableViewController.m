@@ -8,13 +8,13 @@
 
 #import "AboutMeTableViewController.h"
 #import "PopMenu.h"
-#import "MyMusicTableViewController.h"
 #import "NSString+StoryboardIdentifiers.h"
 #import "CustomTableViewCell.h"
 
 #define kAnimationTime 0.4F
 #define kAvenirLight @"Avenir-Light"
 #define kAvenirMedium @"Avenir-Medium"
+
 
 @interface AboutMeTableViewController ()
 
@@ -68,7 +68,6 @@
     
     //fade in views
     [self fadeoutBlurView];
-    
 }
 
 #pragma mark - Fade out blur
@@ -85,7 +84,8 @@
                      animations:^{
                          self.blurView.alpha = 0.0F;
                      } completion:^(BOOL finished) {
-                         //none
+                         //animate the wiggle in the table by reloading it
+                         [self.tableView reloadData];
                      }];
 }
 
@@ -112,26 +112,51 @@
     }
     _popMenu.didSelectedItemCompletion = ^(MenuItem *selectedItem) {
         if ([selectedItem.title isEqualToString:@"My Apps"]) {
+            UIViewController *aboutMeController = [weakSelf.storyboard instantiateViewControllerWithIdentifier:[NSString myAppsIdentifier]];
             
+            UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:aboutMeController];
+            navController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            [weakSelf presentViewController:navController animated:YES completion:^{
+                //
+            }];
         }
         if ([selectedItem.title isEqualToString:@"My Music"]) {
-            MyMusicTableViewController *myMusic = [weakSelf.storyboard instantiateViewControllerWithIdentifier:[NSString myMusicIdentifier]];
-            UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:myMusic];
-            navController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-            [weakSelf presentViewController:navController animated:YES completion:nil];
+            //go to soundcloud
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.soundcloud.com/kinnetixmusic"]];
         }
         if ([selectedItem.title isEqualToString:@"About Me"]) {
-            
+            //do nothing
         }
     };
-    
-    //    [_popMenu showMenuAtView:self.view];
     
     [_popMenu showMenuAtView:self.view startPoint:CGPointMake(CGRectGetWidth(self.view.bounds) - 60, CGRectGetHeight(self.view.bounds)) endPoint:CGPointMake(60, CGRectGetHeight(self.view.bounds))];
 }
 
 - (IBAction)showMenuAction:(id)sender{
     [self showMenu];
+}
+
+#pragma mark - wiggle image
+
+-(void)wiggleImage:(UIImageView *)image reverseAnimation:(BOOL)reverse{
+    if (!reverse) {
+        CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+        animation.keyPath = @"position.x";
+        animation.values = @[ @0, @8, @-8, @4, @0 ];
+        animation.keyTimes = @[ @0, @(1 / 6.0), @(3 / 6.0), @(5 / 6.0), @1 ];
+        animation.duration = 0.4;
+        animation.additive = YES;
+        [image.layer addAnimation:animation forKey:@"wiggle"];
+    }else{
+        CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+        animation.keyPath = @"position.x";
+        animation.values = @[ @0, @-8, @8, @-4, @0 ];
+        animation.keyTimes = @[ @0, @(1 / 6.0), @(3 / 6.0), @(5 / 6.0), @1 ];
+        animation.duration = 0.4;
+        animation.additive = YES;
+        [image.layer addAnimation:animation forKey:@"wiggleReverse"];
+    }
+    
 }
 
 
@@ -160,6 +185,12 @@
     cell.descriptionlabel.text = self.funFactsArray[indexPath.row][0];
     cell.iconImage.image = [UIImage imageNamed:self.funFactsArray[indexPath.row][1]];
     
+    //animate image alternating by row
+    if( [indexPath row] % 2)
+        [self wiggleImage:cell.iconImage reverseAnimation:NO];
+    else
+        [self wiggleImage:cell.iconImage reverseAnimation:YES];
+    
     return cell;
 }
 
@@ -182,8 +213,6 @@
     
     // Padding of 1 point (cell separator)
     CGFloat separatorHeight = 1;
-    
-    NSLog(@"Height + Separator Height = %f", height+separatorHeight);
     
     return height + separatorHeight;
 }

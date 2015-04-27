@@ -14,7 +14,6 @@
 		FE7150511AE4504700583A8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7150501AE4504700583A8B /* Images.xcassets */; };
 		FE7150541AE4504700583A8B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7150521AE4504700583A8B /* LaunchScreen.xib */; };
 		FE7150601AE4504700583A8B /* WWDC2015Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE71505F1AE4504700583A8B /* WWDC2015Tests.m */; };
-		FE71506B1AE4516900583A8B /* MyMusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE71506A1AE4516900583A8B /* MyMusicTableViewController.m */; };
 		FE7150A51AE4527700583A8B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150A31AE4527700583A8B /* AddressBook.framework */; };
 		FE7150A61AE4527700583A8B /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150A41AE4527700583A8B /* AddressBookUI.framework */; };
 		FE7150A81AE4527D00583A8B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7150A71AE4527D00583A8B /* Security.framework */; };
@@ -26,6 +25,8 @@
 		FE7150BB1AE4A93D00583A8B /* AboutMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7150BA1AE4A93D00583A8B /* AboutMeTableViewController.m */; };
 		FE7150BE1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7150BD1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m */; };
 		FE7150C11AE4B98800583A8B /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7150C01AE4B98800583A8B /* CustomTableViewCell.m */; };
+		FEF2D6511AED89C100293797 /* BHAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF2D6501AED89C100293797 /* BHAlertView.swift */; };
+		FEF2D65B1AEDA6C300293797 /* SongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2D65A1AEDA6C300293797 /* SongCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,6 @@
 		FE7150591AE4504700583A8B /* WWDC2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDC2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE71505E1AE4504700583A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE71505F1AE4504700583A8B /* WWDC2015Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDC2015Tests.m; sourceTree = "<group>"; };
-		FE7150691AE4516900583A8B /* MyMusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMusicTableViewController.h; sourceTree = "<group>"; };
-		FE71506A1AE4516900583A8B /* MyMusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMusicTableViewController.m; sourceTree = "<group>"; };
 		FE7150A31AE4527700583A8B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		FE7150A41AE4527700583A8B /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		FE7150A71AE4527D00583A8B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -70,6 +69,9 @@
 		FE7150BD1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StoryboardIdentifiers.m"; sourceTree = "<group>"; };
 		FE7150BF1AE4B98800583A8B /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		FE7150C01AE4B98800583A8B /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		FEF2D6501AED89C100293797 /* BHAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BHAlertView.swift; path = BHAlertView/BHAlertView.swift; sourceTree = "<group>"; };
+		FEF2D6591AEDA6C300293797 /* SongCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongCell.h; sourceTree = "<group>"; };
+		FEF2D65A1AEDA6C300293797 /* SongCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,15 +149,15 @@
 			children = (
 				FE7150471AE4504700583A8B /* AppDelegate.h */,
 				FE7150481AE4504700583A8B /* AppDelegate.m */,
-				FE7150691AE4516900583A8B /* MyMusicTableViewController.h */,
-				FE71506A1AE4516900583A8B /* MyMusicTableViewController.m */,
-				FE7150B91AE4A93D00583A8B /* AboutMeTableViewController.h */,
-				FE7150BA1AE4A93D00583A8B /* AboutMeTableViewController.m */,
+				FEF2D6481AEBEF9B00293797 /* About Me */,
+				FEF2D64F1AED898A00293797 /* BHAlertView */,
+				FE7150B71AE455CC00583A8B /* MyAppsViewController.swift */,
 				FE7150BC1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.h */,
 				FE7150BD1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m */,
 				FE7150BF1AE4B98800583A8B /* CustomTableViewCell.h */,
 				FE7150C01AE4B98800583A8B /* CustomTableViewCell.m */,
-				FE7150B71AE455CC00583A8B /* MyAppsViewController.swift */,
+				FEF2D6591AEDA6C300293797 /* SongCell.h */,
+				FEF2D65A1AEDA6C300293797 /* SongCell.m */,
 				FE71504D1AE4504700583A8B /* Main.storyboard */,
 				FE7150501AE4504700583A8B /* Images.xcassets */,
 				FE7150521AE4504700583A8B /* LaunchScreen.xib */,
@@ -189,6 +191,23 @@
 				FE71505E1AE4504700583A8B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF2D6481AEBEF9B00293797 /* About Me */ = {
+			isa = PBXGroup;
+			children = (
+				FE7150B91AE4A93D00583A8B /* AboutMeTableViewController.h */,
+				FE7150BA1AE4A93D00583A8B /* AboutMeTableViewController.m */,
+			);
+			name = "About Me";
+			sourceTree = "<group>";
+		};
+		FEF2D64F1AED898A00293797 /* BHAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				FEF2D6501AED89C100293797 /* BHAlertView.swift */,
+			);
+			name = BHAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,9 +348,10 @@
 				FE7150BE1AE4AD0D00583A8B /* NSString+StoryboardIdentifiers.m in Sources */,
 				FE7150C11AE4B98800583A8B /* CustomTableViewCell.m in Sources */,
 				FE7150491AE4504700583A8B /* AppDelegate.m in Sources */,
-				FE71506B1AE4516900583A8B /* MyMusicTableViewController.m in Sources */,
 				FE7150B81AE455CC00583A8B /* MyAppsViewController.swift in Sources */,
+				FEF2D6511AED89C100293797 /* BHAlertView.swift in Sources */,
 				FE7150BB1AE4A93D00583A8B /* AboutMeTableViewController.m in Sources */,
+				FEF2D65B1AEDA6C300293797 /* SongCell.m in Sources */,
 				FE7150461AE4504700583A8B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = WWDC2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -499,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = WWDC2015/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
